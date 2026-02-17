@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/script.js"></script>
+    <style>
+        h1{
+            color: aqua;
+        }
+
+        #food-title{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <ul>
+            <li>Shafayet</li>
+            <li>Bonobash</li>
+            <li>Jalali Set</li>
+        </ul>
+    </section>
+    <section>
+        <h1 id="food-title">Foods I Love</h1>
+        <ul>
+            <li>Rice</li>
+            <li>Potato</li>
+            <li>Fish</li>
+            <li class="foreign">Lentils</li>
+            <li class="foreign">Burger</li>
+            <li class="foreign">Pizza</li>
+        </ul>
+    </section>
+
+
+    <script>
+        // console.log('hello, from js')
+        const student={
+            name: 'abul mia',
+            id: 121,
+            study: function(subject){
+                console.log(subject);
+            }
+        }
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        // for(const li of liCollection){
+        //     console.log(li.innerText);
+        // }
+
+        const foodTitle = document.getElementById('food-title');
+        console.log(foodTitle.innerText);
+
+        const foreignElements = document.getElementsByClassName('foreign');
+        console.log(foreignElements);
+        for(const element of foreignElements){
+            console.log(element.innerText)
+        }
+    </script>
+</body>
+</html>
