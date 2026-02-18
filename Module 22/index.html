@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour of DOM</title>
     <link rel="stylesheet" href="style/style.css">
-    <script src="js/script.js"></script>
+    
     <style>
         h1{
             color: aqua;
@@ -14,30 +14,53 @@
         #food-title{
             color: green;
         }
+
+        .food .foreign{
+            font-weight: 700;
+        }
     </style>
 </head>
 <body>
-    <section>
-        <ul>
-            <li>Shafayet</li>
-            <li>Bonobash</li>
-            <li>Jalali Set</li>
-        </ul>
-    </section>
-    <section>
-        <h1 id="food-title">Foods I Love</h1>
-        <ul>
-            <li>Rice</li>
-            <li>Potato</li>
-            <li>Fish</li>
-            <li class="foreign">Lentils</li>
-            <li class="foreign">Burger</li>
-            <li class="foreign">Pizza</li>
-        </ul>
-    </section>
+    <main id="main-container">
+            <section id="old-dhaka" class="songs">
+                <h1>Welcome to DOM</h1>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Harum quod maxime deserunt excepturi,</span>  consequuntur commodi tenetur fugit dolorum repudiandae ipsum vitae recusandae <span>Lorem ipsum dolor sit amet.</span> ex facilis omnis autem cumque quo? Dolores excepturi praesentium doloribus commodi. Obcaecati alias voluptatem numquam officia debitis odit vel animi expedita, tempora commodi.</p>
+                
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Ut recusandae optio debitis voluptas enim</span>libero ab unde laboriosam, et natus.</h1>
+            <ul>
+                <li>Shafayet</li>
+                <li>Bonobash</li>
+                <li>Jalali Set</li>
+            </ul>
+
+            <section id="players-container">
+                <h1>Players</h1>
+                    <ul id="player-list">
+                        <li>Messi</li>
+                        <li>Pele</li>
+                        <li>Ronaldo</li>
+                        <li>Embappe</li>
+                    </ul>
+            </section>
+            
+        </section>
+        <section class="food">
+            <h1 id="food-title">Foods I Love</h1>
+            <ul>
+                <li>Rice</li>
+                <li>Potato</li>
+                <li>Fish</li>
+                <li class="foreign">Lentils</li>
+                <li class="foreign">Burger</li>
+                <li class="foreign">Pizza</li>
+            </ul>
+        </section>
+    </main>
+    
 
 
-    <script>
+    <!-- <script>
         // console.log('hello, from js')
         const student={
             name: 'abul mia',
@@ -46,20 +69,36 @@
                 console.log(subject);
             }
         }
-        const liCollection = document.getElementsByTagName('li');
-        // console.log(liCollection);
-        // for(const li of liCollection){
-        //     console.log(li.innerText);
+        // const liCollection = document.getElementsByTagName('li');
+        // // console.log(liCollection);
+        // // for(const li of liCollection){
+        // //     console.log(li.innerText);
+        // // }
+
+        // const foodTitle = document.getElementById('food-title');
+        // console.log(foodTitle.innerText);
+
+        // const foreignElements = document.getElementsByClassName('foreign');
+        // console.log(foreignElements);
+        // for(const element of foreignElements){
+        //     console.log(element.innerText)
         // }
 
-        const foodTitle = document.getElementById('food-title');
-        console.log(foodTitle.innerText);
+        // const queryId = document.querySelectorAll('#old-dhaka p span')
+        // console.log(queryId)
+        // const foodElements = document.getElementById('food-title');
+        // // foodElements.innerText = 'Food Forever';
+        // console.log(foodElements.innerText)
+        // foodElements.style.color = 'red';
+        // foodElements.style.backgroundColor = 'darkred'
 
-        const foreignElements = document.getElementsByClassName('foreign');
-        console.log(foreignElements);
-        for(const element of foreignElements){
-            console.log(element.innerText)
-        }
-    </script>
+        // const settingHTML = document.getElementById('players-container').innerHTML;
+        // // settingHTML = 'tom';
+        // console.log(settingHTML)
+
+    </script> -->
+
+    <script src="js/script.js"></script>
+    <script src="js/append.js"></script>
 </body>
 </html>
