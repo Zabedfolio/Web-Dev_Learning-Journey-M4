@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+</head>
+<body>
+    <h1>DOM DOMD ODOMDHD</h1>
+    <button onclick="console.log(7)">Click me</button>
+    <button onclick="console.log('Zabed')">Another Button</button>
+    <br>
+    <!-- option 2 for click event handler -->
+     <button onclick="makeYellow()" >Make Yellow</button>
+     <br>
+     <button id="btn-make-blue">Make Blue</button>
+
+     <button id="btn-purple">Make purple</button>
+     <br>
+     <br>
+     <!-- addEvenListener -->
+     <button id="btn-green">Make Green</button>
+
+     <button id="make-red">Make Red</button>
+
+
+
+     <script>
+        // getElementByID.addEventListener
+        document.getElementById('btn-green').addEventListener('mouseover', function makeG(){
+            document.body.style.backgroundColor = 'green'
+        })
+
+        document.getElementById('make-red').addEventListener('click', function makeGold(){
+            document.body.style.backgroundColor = 'red'
+        })
+
+     </script>
+
+    <script src="Js/events.js"></script>
+</body>
+</html>
